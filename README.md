@@ -106,10 +106,12 @@ pt <- ggplot(r9,aes(x=r9$sample, y=r9$percentage, fill=r9$species)) +
   scale_fill_discrete(name = paste0(title,":",level)) + theme(axis.text.x = element_text(angle = 45)) + 
   ggtitle(paste0(title,"_at_",level,"_level_",as.character(percentage2),"%_abundance"))
 
-print(pt)
-ggplotly(pt)
-
 write.csv(r9, paste0(title,"_",level,"_",as.character(percentage),".csv"),row.names=F)
+
+pu <- ggplotly(pt)
+print(pt)
+pu
+
 }
 
 ## test ## 
