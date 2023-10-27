@@ -1,4 +1,5 @@
 # metagenomics_kraken2
+```r
 a collection of bash and R codes for metagenomics analysis using kraken2, bracken and ggplot
 
 designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
