@@ -7,8 +7,8 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 
 ```
 
-```r
 # The bash code for INS
+```r
 # 1 # fastqc #
 fastqc -t 25 *
 mkdir fastqc ; 
