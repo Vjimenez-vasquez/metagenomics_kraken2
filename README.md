@@ -8,7 +8,7 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 
 ```
 
-# The bash code for INS
+## The bash code for INS
 ```r
 # 1 # fastqc #
 fastqc -t 25 *
