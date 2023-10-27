@@ -7,10 +7,9 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 
 ```
 
-# YOU NEED FIRST DOWNLOAD THE DATABASE O DATABASES :
-https://benlangmead.github.io/aws-indexes/k2 
+# YOU NEED FIRST DOWNLOAD THE DATABASE O DATABASES
 ```r
-
+https://benlangmead.github.io/aws-indexes/k2
 ```
 
 # The bash code for INS
