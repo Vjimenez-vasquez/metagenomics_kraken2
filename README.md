@@ -7,6 +7,7 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 
 ```
 
+```r
 # The bash code for INS
 # 1 # fastqc #
 fastqc -t 25 *
