@@ -122,6 +122,7 @@ pu
 pdf(file ="Viroma_1.pdf",width = 35, height = 15)
 abundances(data=r8,percentage="0.01",title="Virome",level="species")
 dev.off()
+```
 
 # step 3 : USAGE #
 ```r
