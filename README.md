@@ -123,8 +123,10 @@ pdf(file ="Viroma_1.pdf",width = 35, height = 15)
 abundances(data=r8,percentage="0.01",title="Virome",level="species")
 dev.off()
 
-# 5 : USAGE#
+# step 3 : USAGE #
+```r
 # data : abundance data frame obtained in "step-2"
 # percentage : minimun abundance percentage (in frequence units) to consider ej. 1% = 0.01 , 0.1% = 0.001 , 50% = 0.5
 # title : a given prefix to include in the title. ej: if you use "Virome" word, the final title will include the "level" and the "percentage" to obtain the final title : "Virome_at_species_level_1%_abundance"
 # level : taxonomic level of the identification. ej: "species"
+```
