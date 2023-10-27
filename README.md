@@ -6,7 +6,7 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 ![metagenomics_kraken2](https://github.com/Vjimenez-vasquez/metagenomics_kraken2/assets/89874227/3cfc3e29-98cd-40ca-8124-b51606ba3c2e)
 
 
-# The bash code for INS
+# step 1 : The bash code for INS
 ```r
 # path to BRACKEN: /media/ins-bio/DATA01/data_base_download/Bracken-2.7/./bracken
 # path to KRAKEN VIRUS DATABASE: /media/ins-bio/DATA01/data_base_download/KRAKENVIRDB
@@ -51,14 +51,17 @@ remotes::install_github("fbreitwieser/pavian")
 pavian::runApp(port=5000)
 ```
 
-# R code for plot
+# step 2 : R code for plot
 ```r
-# set the working directory containing bracken output files (ej: INS030518523_S4.bracken.txt) # 
+# 1 # set the working directory containing bracken output files (ej: INS030518523_S4.bracken.txt) #
+
 setwd("/home/vjimenez/Documentos/rotita_170523/bracken")
 dir()
 library(tidyr)
+#install.packages("tidyr")#
 
-## reading the bracken output ## 
+# 2 # reading the bracken output ##
+
 r <- dir()
 r1 <- data.frame()
 r2 <- 0
@@ -86,7 +89,7 @@ r8 <- data.frame(sample=r3,species=r4,reads=r5,percentage=r6)
 head(r8)
 write.csv(r8, "Viroma_total.csv",row.names=F)
 
-## the plot for abundances ##
+# 3 # the plot for abundances ##
 
 abundances <- function(data,percentage,title,level){
 data <- data
@@ -114,21 +117,14 @@ pu
 
 }
 
-## test ## 
+# 4 : test the code ## 
 
-pdf(file ="Viroma_pos_rotavirusA.pdf",width = 35, height = 15)
+pdf(file ="Viroma_1.pdf",width = 35, height = 15)
 abundances(data=r8,percentage="0.01",title="Virome",level="species")
 dev.off()
 
-pos <- unique(r8[r8$species %in% "Rotavirus A", 1])
-length(pos)
-
-unique(r8$sample)
-r10 <- r8[r8$sample %in% pos, ]
-dim(r10)
-dim(r8)
-
-pdf(file ="Viroma_pos_rotavirusA.pdf",width = 35, height = 15)
-abundances(data=r10,percentage="0.05",title="Virome_positives_rotA",level="species")
-dev.off()
-
+# 5 : USAGE#
+# data : abundance data frame obtained in "step-2"
+# percentage : minimun abundance percentage (in frequence units) to consider ej. 1% = 0.01 , 0.1% = 0.001 , 50% = 0.5
+# title : a given prefix to include in the title. ej: if you use "Virome" word, the final title will include the "level" and the "percentage" to obtain the final title : "Virome_at_species_level_1%_abundance"
+# level : taxonomic level of the identification. ej: "species"
