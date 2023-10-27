@@ -1,5 +1,4 @@
 # metagenomics_kraken2
-```r
 a collection of bash and R codes for metagenomics analysis using kraken2, bracken and ggplot
 
 designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
@@ -11,7 +10,6 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 # YOU NEED FIRST DOWNLOAD THE DATABASE O DATABASES
 ```r
 https://benlangmead.github.io/aws-indexes/k2
-```
 
 # The bash code for INS
 ```r
