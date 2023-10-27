@@ -5,8 +5,10 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 ![metagenomics_kraken2](https://github.com/Vjimenez-vasquez/metagenomics_kraken2/assets/89874227/3cfc3e29-98cd-40ca-8124-b51606ba3c2e)
 
 ```
+
 # kraken2 databases : https://benlangmead.github.io/aws-indexes/k2
-## The bash code for INS
+
+# The bash code for INS
 ```r
 # 1 # fastqc #
 fastqc -t 25 *
