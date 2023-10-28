@@ -5,9 +5,9 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 
 ![metagenomics_kraken2](https://github.com/Vjimenez-vasquez/metagenomics_kraken2/assets/89874227/3cfc3e29-98cd-40ca-8124-b51606ba3c2e)
 ```
-
 # step 1 : The bash code for INS
 ```r
+
 # path to BRACKEN: /media/ins-bio/DATA01/data_base_download/Bracken-2.7/./bracken
 # path to KRAKEN VIRUS DATABASE: /media/ins-bio/DATA01/data_base_download/KRAKENVIRDB
 
