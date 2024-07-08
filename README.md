@@ -10,6 +10,9 @@ designed by Victor Jimenez-Vasquez (vr.jimenez.vs@gmail.com)
 # path to BRACKEN: /media/ins-bio/DATA01/data_base_download/Bracken-2.7/./bracken
 # path to KRAKEN VIRUS DATABASE: /media/ins-bio/DATA01/data_base_download/KRAKENVIRDB
 
+# path to KRAKEN DATABASE (104) :/home/administrador/Documentos/KRAKENPlusDB
+# path to BRACKEN (104) : /home/administrador/Documentos/Bracken-2.7
+
 # 1 # fastqc #
 fastqc -t 25 *
 mkdir fastqc ; 
