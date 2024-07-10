@@ -133,3 +133,45 @@ dev.off()
 # title : a given prefix to include in the title. ej: if you use "Virome" word, the final title will include the "level" and the "percentage" to obtain the final title : "Virome_at_species_level_1%_abundance"
 # level : taxonomic level of the identification. ej: "species"
 ```
+
+# step 4 : HEATMAP #
+```r
+#install.packages("fossil")#
+#install.packages("tidyr")#
+#install.packages("ggplot2")#
+
+library(ggplot2)
+library(fossil)
+library(tidyr)
+
+data <- read.csv("Viroma_total.csv", header=TRUE)
+dim(data)
+head(data)
+sort(unique(data$species))
+
+q <- data.frame(sample=data$sample, species=data$species, abundance=as.numeric(data$percentage)) 
+head(q)
+dim(q)
+df <- create.matrix(q, tax.name = "sample",locality = "species", abund.col = "abundance", abund = TRUE)
+class(df)
+table <- as.data.frame(df)
+dim(table)
+head(table)
+
+write.csv(table,"complete_table.csv", row.names=T, quot=F)
+
+head(data)
+data <- data[data$reads > 1000, ]
+heatmap_plot1 <- ggplot(data, aes(x = species, y = sample, fill = percentage)) +
+		geom_tile(color = "black") +
+  		geom_text(aes(label = round(reads,2)), color = "#333333", size = 1.2) +
+		scale_fill_gradient2(low = "gray", high = "blue",
+    	      mid="red", midpoint = (max(data$percentage)/2), limits = c(0, max(data$percentage))) +
+		theme_bw() + 
+		coord_fixed() +
+            theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+		scale_x_discrete(name="Microbial species") +
+	      scale_y_discrete(name="samples") +
+		ggtitle("Microbial Diversity")
+heatmap_plot1
+```
