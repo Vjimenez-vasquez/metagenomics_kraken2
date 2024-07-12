@@ -135,6 +135,34 @@ dev.off()
 # level : taxonomic level of the identification. ej: "species"
 ```
 
+## REMOVING "BeAn 58058 virus" ##
+```r
+head(r8)
+t <- r8[!r8$species %in% "BeAn 58058 virus", ]
+head(t)
+dim(r8)
+
+t1 <- 0 ; t2 <- 0 ; t3 <- 0 ; t4 <- 0 ;
+for (i in unique(t$sample)){
+
+t1 <- as.numeric(t[t$sample %in% i , 3])
+t2 <- sum(t[t$sample %in% i , 3])
+t3 <- t1/t2
+t4 <- append(t4,t3)
+}
+
+t$percentage <- t4[2:length(t4)]
+head(t)
+
+pdf(file ="Viroma_1.pdf",width = 35, height = 15)
+abundances(data=r8,percentage="0.01",title="Virome (suero)",level="species")
+dev.off()
+
+pdf(file ="Viroma_2_clean.pdf",width = 35, height = 15)
+abundances(data=t,percentage="0.01",title="Virome (suero)",level="species")
+dev.off()
+```
+
 # step 4 : HEATMAP #
 ```r
 #install.packages("fossil")#
@@ -175,4 +203,55 @@ heatmap_plot1 <- ggplot(data, aes(x = species, y = sample, fill = percentage)) +
 	      scale_y_discrete(name="samples") +
 		ggtitle("Microbial Diversity")
 heatmap_plot1
+```
+
+# step 5 : HEATMAP (BeAn removed) #
+```r
+#install.packages("fossil")#
+#install.packages("tidyr")#
+#install.packages("ggplot2")#
+
+library(ggplot2)
+library(fossil)
+library(tidyr)
+
+data <- read.csv("Virome (suero)_species_0.01.csv", header=TRUE)
+sort(unique(data$species))
+sp_reads <- aggregate(data$reads, by=list(data$species), FUN=sum)
+sp_reads <- sp_reads[order(sp_reads$x),]
+names(sp_reads) <- c("species","abundance")
+data2 <- merge(data,sp_reads, by="species", all.x=F)
+dim(data)
+dim(data2)
+head(data2)
+
+q <- data.frame(sample=data$sample, species=data$species, abundance=as.numeric(data$percentage)) 
+head(q)
+dim(q)
+df <- create.matrix(q, tax.name = "sample",locality = "species", abund.col = "abundance", abund = TRUE)
+class(df)
+table <- as.data.frame(df)
+dim(table)
+head(table)
+
+write.csv(table,"complete_table.csv", row.names=T, quot=F)
+
+head(data)
+data3 <- data2[data2$reads > 200, ]
+heatmap_plot1 <- ggplot(data3, aes(x = reorder(species,-abundance), y = sample, fill = percentage)) +
+		geom_tile(color = "black") +
+  		geom_text(aes(label = round(reads,2)), color = "#333333", size = 1) +
+		scale_fill_gradient2(low = "gray", high = "blue",
+    	      mid="red", midpoint = (max(data3$percentage)/2), limits = c(0, max(data3$percentage))) +
+		theme_bw() + 
+		coord_fixed() +
+            theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+		scale_x_discrete(name="Viral species (> 200 reads)") +
+	      scale_y_discrete(name="samples") +
+		ggtitle("Viral Diversity (suero)")
+heatmap_plot1
+
+heatmap_plot2 <- ggplotly(heatmap_plot1)
+print(heatmap_plot1)
+heatmap_plot2
 ```
