@@ -255,3 +255,52 @@ heatmap_plot2 <- ggplotly(heatmap_plot1)
 print(heatmap_plot1)
 heatmap_plot2
 ```
+# step 6 : METAGENOMICS_COMMANDS.R examples #
+```r
+## directories ##
+
+# setwd("C:/Users/USUARIO/Documents/cietrop/analisis_2/hisopado") #
+# setwd("C:/Users/USUARIO/Documents/cietrop/analisis_2/suero") #
+
+dir()
+
+source("C:/Users/USUARIO/Documents/cietrop/analisis_2/metagenomic_commands.R")
+
+## TOTAL DATA ##
+data1 <- freqs("Viroma_total", "all","0")
+head(data1)
+dim(data1)
+
+pdf(file ="Viroma_total.pdf",width = 35, height = 15)
+abundances(data=data1,percentage="1",title="Viroma_total",level="species")
+dev.off()
+
+pdf(file ="Viroma_clean.pdf",width = 35, height = 15)
+abundances_sp(data=data1,percentage="1",title="Viroma_clean",level="species")
+dev.off()
+
+## REMOVING BeAn 58058 virus ## 
+data2 <- freqs("Viroma_clean", "BeAn 58058 virus", "0")
+head(data2)
+
+pdf(file ="Viroma_clean.pdf",width = 35, height = 15)
+abundances(data=data2,percentage="0",title="Viroma_clean",level="species")
+dev.off()
+
+pdf(file ="Viroma_clean.pdf",width = 35, height = 15)
+abundances_sp(data=data2,percentage="0",title="Viroma_clean",level="species")
+dev.off()
+
+## REMOVING BeAn 58058 virus and species > 10% abundance ## 
+
+pdf(file ="Viroma_clean_2.pdf",width = 35, height = 15)
+abundances(data=data2,percentage="30",title="Viroma_clean",level="species")
+dev.off()
+
+pdf(file ="Viroma_clean_2.pdf",width = 35, height = 15)
+abundances_sp(data=data2,percentage="30",title="Viroma_clean",level="species")
+dev.off()
+
+## HEATMAP ## 
+metaheat(data2,1000,"Virome 1000 reads (hisopado)")
+```
