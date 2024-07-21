@@ -268,7 +268,12 @@ dir()
 source("C:/Users/USUARIO/Documents/cietrop/analisis_2/metagenomic_commands.R")
 
 ## TOTAL DATA ##
-data1 <- freqs("Viroma_total", "all","0")
+data1 <- freqs(title="Viroma_total", remove="all",freq="0")
+
+- title: prefix of the output "csv" filename.
+- remove : species name as single or a list/object of species to remove.
+- frequency : threshold frequency ranging from 0 to 1 to re-estimate the percentage (%) abundances.
+
 head(data1)
 dim(data1)
 
@@ -279,6 +284,11 @@ dev.off()
 pdf(file ="Viroma_clean.pdf",width = 35, height = 15)
 abundances_sp(data=data1,percentage="1",title="Viroma_clean",level="species")
 dev.off()
+
+- data: input object, generated with "freqs" command.
+- percentage: percentage (from 0 to 100) to consider to generate the plots.
+- title: plot name.
+- level: prefix to consider in the x-axis ("Bacteria", "Virus").
 
 ## REMOVING BeAn 58058 virus ## 
 data2 <- freqs("Viroma_clean", "BeAn 58058 virus", "0")
@@ -303,5 +313,10 @@ abundances_sp(data=data2,percentage="30",title="Viroma_clean",level="species")
 dev.off()
 
 ## HEATMAP ## 
-metaheat(data2,1000,"Virome 1000 reads (hisopado)")
+metaheat <- function(data,reads,title,type)
+
+- data2 <- input object, generated with "freqs" command.
+- reads <- threshold number of reads to consider in the plot (ej. 100, 500, 1000, 5000).
+- title <- plot title.
+- type <- name to consider in the x-axis plot (ej. "Bacteria", "Virus").
 ```
