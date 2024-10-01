@@ -141,8 +141,7 @@ heatmap_plot1 <- ggplot(data3, aes(x = reorder(species,-abundance), y = sample, 
 print(heatmap_plot1)
 
 heatmap_plot2 <- ggplotly(heatmap_plot1)
-print(heatmap_plot1)
+print(heatmap_plot2)
 heatmap_plot2
 
 }
-
