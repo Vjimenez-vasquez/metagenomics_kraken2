@@ -320,3 +320,38 @@ metaheat <- function(data,reads,title,type)
 - title <- plot title.
 - type <- name to consider in the x-axis plot (ej. "Bacteria", "Virus").
 ```
+# step 7 : METAGENOMICS_COMMANDS.R examples #
+```r
+
+# es necesario leer las tablas de patogenos "virus.txt", "bacteria.txt", "eukarya.txt" y seguir las instrucciones #
+
+setwd("C:/Users/USUARIO/Documents/cietrop/analisis_2.2_250724")
+dir()
+source("metagenomic_commands_2.R")
+
+##################
+### BACTERIOMA ###
+##################
+
+## hisopado ##
+
+baclist <- read.csv("bacteria.txt", header=T)
+head(baclist)
+v <- sort(unique(baclist[,1]))
+
+bact <- read.csv("hisopado_bactSTND/Bacterioma_total_species_0.csv", header=T)
+head(bact)
+
+a1 <- 0 ; a2 <- 0 ; 
+for (i in 1:length(v)){
+a1 <- grep(v[i], bact$species, value=T)
+a2 <- append(a2,a1)
+}
+
+a3 <- sort(unique(a2)[2:length(a2)])
+
+bact_pt <- bact[bact$species %in% a3, ]
+head(bact_pt)
+
+metaheat(bact_pt, 100,"Bacterias patógenas (hisopado)","Bacteria")
+```
