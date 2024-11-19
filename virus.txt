@@ -1,0 +1,252 @@
+organism,ID
+Aichivirus A,72149
+Akhmeta virus,2200830
+Alphainfluenzavirus influenzae,11320
+Alphainfluenzavirus influenzae,2955291
+Alphapapillomavirus 4,337043
+Alphapapillomavirus 7,337042
+Alphapapillomavirus 9,337041
+Alphapolyomavirus octihominis,862909
+Alphapolyomavirus octihominis,1891727
+Alphapolyomavirus quintihominis,493803
+Alphapolyomavirus quintihominis,1891726
+Bandavirus bhanjanagarense,1213620
+Bandavirus bhanjanagarense,3051989
+Bandavirus dabieense,2748958
+Banna virus,77763
+Barmah Forest virus,11020
+Bayou orthohantavirus,1980459
+Betacoronavirus 1,694003
+Betainfluenzavirus influenzae,11520
+Betainfluenzavirus influenzae,2955465
+Betapolyomavirus hominis,1891762
+Betapolyomavirus quartihominis,1891765
+Betapolyomavirus secuhominis,1891763
+Bhanja bandavirus,2734423
+Black Creek Canal orthohantavirus,1980460
+Borna disease virus,12455
+Bufavirus-3,1391667
+Bunyamwera orthobunyavirus,1933179
+Bwamba orthobunyavirus,35310
+Cache Valley orthobunyavirus,2560364
+Cali mammarenavirus,2169993
+California encephalitis orthobunyavirus,1933264
+Cardiovirus A,1821749
+Chapare mammarenavirus,499556
+Chikungunya virus,37124
+Colorado tick fever coltivirus,46839
+Colorado tick fever coltivirus,2748762
+Cowpox virus,10243
+Coxsackievirus,12066
+Crimean-Congo hemorrhagic fever orthonairovirus,1980519
+Cytomegalovirus humanbeta5,10359
+Cytomegalovirus humanbeta5,3050295
+Deltapolyomavirus decihominis,1203539
+Deltapolyomavirus decihominis,1208309
+Dobrava-Belgrade orthohantavirus,1980467
+Dugbe orthonairovirus,1980521
+Eastern equine encephalitis virus,11021
+Echovirus,33758
+Enterovirus A,138948
+Enterovirus B,138949
+Enterovirus C,138950
+Enterovirus D,138951
+Erythroparvovirus primate1,3052189
+European bat lyssavirus,38768
+Everglades virus,2083198
+Gammainfluenzavirus influenzae,11552
+Gammainfluenzavirus influenzae,2955935
+Guanarito mammarenavirus,45219
+Guaroa orthobunyavirus,1933274
+Hantaan orthohantavirus,1980471
+Heartland bandavirus,2747342
+Hendra henipavirus,63330
+Hepacivirus C,11103
+Hepatitis B virus,10407
+Hepatitis delta virus,12475
+Hepatovirus A,12092
+Huaiyangshan banyangvirus,2509281
+Human adenovirus sp.,1907210
+Human astrovirus,1868658
+Human betaherpesvirus 6,10368
+Human bocavirus,329641
+Human coronavirus 229E,11137
+Human coronavirus HKU1,290028
+Human coronavirus NL63,277944
+Human immunodeficiency virus,12721
+Human mastadenovirus A,129875
+Human mastadenovirus B,108098
+Human mastadenovirus C,129951
+Human mastadenovirus D,130310
+Human mastadenovirus F,130309
+Human parechovirus,195054
+Human rhinovirus sp.,169066
+Human torovirus,67605
+Ilesha orthobunyavirus,2560528
+Jamestown Canyon orthobunyavirus,2560532
+La Crosse orthobunyavirus,2560547
+Lassa mammarenavirus,11620
+Lujo mammarenavirus,649188
+Lymphocryptovirus humangamma4,10376
+Lymphocryptovirus humangamma4,3050299
+Lymphocytic choriomeningitis mammarenavirus,11623
+Lyssavirus australis,90961
+Lyssavirus duvenhage,38767
+Lyssavirus mokola,12538
+Lyssavirus rabies,11292
+Machupo mammarenavirus,11628
+Mammalian orthoreovirus,351073
+Mammalian rubulavirus 5,1979162
+Mammarenavirus brazilense,3052299
+Mammarenavirus juninense,2169991
+Marburg marburgvirus,11269
+Mayaro virus,59301
+Metapneumovirus hominis,162145
+Metapneumovirus hominis,3048148
+Middelburg virus,11023
+Middle East respiratory syndrome-related coronavirus,1335626
+Molluscum contagiosum virus,10279
+Monkeypox virus,10244
+Morbillivirus hominis,11234
+Morbillivirus hominis,3052345
+Mucambo virus,60875
+Mumps rubulavirus,1979165
+Mupapillomavirus 1,334203
+Nairobi sheep disease orthonairovirus,1980526
+Naples phlebovirus,2747931
+Nipah henipavirus,121791
+Norwalk virus,11983
+Onyong-nyong virus,2169701
+Orf virus,10258
+Oropouche orthobunyavirus,1933309
+Orthoavulavirus javaense,2560319
+Orthoavulavirus javaense,3051375
+Orthobunyavirus bunyamweraense,3052381
+Orthobunyavirus cacheense,3052385
+Orthobunyavirus guaroaense,3052397
+Orthobunyavirus ileshaense,3052399
+Orthobunyavirus khatangaense,3052407
+Orthobunyavirus lacrosseense,3052409
+Orthobunyavirus oropoucheense,3052429
+Orthoebolavirus bundibugyoense,565995
+Orthoebolavirus bundibugyoense,3052458
+Orthoebolavirus sudanense,186540
+Orthoebolavirus sudanense,3052460
+Orthoebolavirus zairense,186538
+Orthoebolavirus zairense,3052462
+Orthoflavivirus denguei,12637
+Orthoflavivirus denguei,3052464
+Orthoflavivirus encephalitidis,11084
+Orthoflavivirus encephalitidis,3052465
+Orthoflavivirus flavi,11089
+Orthoflavivirus flavi,3046277
+Orthoflavivirus ilheusense,59563
+Orthoflavivirus ilheusense,3052466
+Orthoflavivirus japonicum,11072
+Orthoflavivirus japonicum,3048158
+Orthoflavivirus kyasanurense,33743
+Orthoflavivirus kyasanurense,3048170
+Orthoflavivirus louisense,11080
+Orthoflavivirus louisense,3052468
+Orthoflavivirus loupingi,11086
+Orthoflavivirus loupingi,3048184
+Orthoflavivirus murrayense,11079
+Orthoflavivirus murrayense,3048215
+Orthoflavivirus nilense,11082
+Orthoflavivirus nilense,3048448
+Orthoflavivirus omskense,12542
+Orthoflavivirus omskense,3048233
+Orthoflavivirus powassanense,11083
+Orthoflavivirus powassanense,3048287
+Orthoflavivirus wesselsbronense,164416
+Orthoflavivirus wesselsbronense,3048447
+Orthoflavivirus zikaense,64320
+Orthoflavivirus zikaense,3048459
+Orthohantavirus andesense,1980456
+Orthohantavirus sinnombreense,44755
+Orthohantavirus sinnombreense,3052499
+Orthonairovirus nairobiense,3052529
+Orthopneumovirus hominis,11250
+Orthopneumovirus hominis,3049954
+Orthorubulavirus hominis,2560526
+Orthorubulavirus hominis,3052556
+Orthorubulavirus laryngotracheitidis,2560525
+Orthorubulavirus laryngotracheitidis,3052557
+Orungo virus,40058
+Parechovirus A,1803956
+Parechovirus B,1803957
+Paslahepevirus balayani,1678143
+Pegivirus C,1985356
+Pegivirus hominis,3052608
+Phlebovirus napoliense,3052666
+Phlebovirus riftense,3052676
+Phlebovirus siciliaense,28292
+Phlebovirus siciliaense,3052681
+Phlebovirus toscanaense,3052686
+Primate T-lymphotropic virus 1,194440
+Primate T-lymphotropic virus 2,194441
+Primate erythroparvovirus 1,1511900
+Pseudocowpox virus,129726
+Punta Toro phlebovirus,1933186
+Puumala orthohantavirus,1980486
+Respirovirus laryngotracheitidis,12730
+Respirovirus laryngotracheitidis,3049952
+Respirovirus pneumoniae,11216
+Respirovirus pneumoniae,3049953
+Rhadinovirus humangamma8,37296
+Rhadinovirus humangamma8,3050300
+Rhinovirus A,147711
+Rhinovirus C,463676
+Rift Valley fever phlebovirus,1933187
+Rosavirus A,1511805
+Roseolovirus humanbeta6a,32603
+Roseolovirus humanbeta6a,3050296
+Roseolovirus humanbeta6b,32604
+Roseolovirus humanbeta6b,3050297
+Roseolovirus humanbeta7,10372
+Roseolovirus humanbeta7,3050298
+Ross River virus,11029
+Rotavirus A,28875
+Rotavirus B,28876
+Rotavirus C,36427
+Rubivirus rubellae,11041
+Rubivirus rubellae,2846071
+Russian Spring-Summer encephalitis virus,64316
+Salivirus A,1330524
+Sandfly fever Naples phlebovirus,1933189
+Sapporo virus,95342
+Semliki Forest virus,11033
+Seoul orthohantavirus,1980490
+Severe acute respiratory syndrome-related coronavirus,694009
+Sicilian phlebovirus,2734473
+Simplexvirus humanalpha1,10298
+Simplexvirus humanalpha1,3050292
+Simplexvirus humanalpha2,10310
+Simplexvirus humanalpha2,3050293
+Simplexvirus macacinealpha1,10325
+Simplexvirus macacinealpha1,3050305
+Sin Nombre orthohantavirus,1980491
+Sindbis virus,11034
+Snowshoe hare orthobunyavirus,2560767
+Spondweni virus,64318
+Tanapox virus,99000
+Thogotovirus bourbonense,1618189
+Thogotovirus bourbonense,2956523
+Thogotovirus dhoriense,11318
+Tonate virus,60877
+Toscana phlebovirus,2734478
+Uukuniemi phlebovirus,1933191
+Uukuniemi uukuvirus,2749936
+Uukuvirus uukuniemiense,3052811
+Vaccinia virus,10245
+Varicellovirus humanalpha3,10335
+Varicellovirus humanalpha3,3050294
+Variola virus,10255
+Venezuelan equine encephalitis virus,11036
+Vesicular stomatitis virus,11276
+Vesiculovirus chandipura,1972576
+Vesiculovirus isfahan,1972573
+Western equine encephalitis virus,11039
+Whitewater Arroyo mammarenavirus,46919
+Yaba monkey tumor virus,38804
+unidentified human coronavirus,694448
